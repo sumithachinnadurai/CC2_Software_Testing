@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.example.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.312 s <<< FAILURE! - in com.example.AppTest
+TestCase2(com.example.AppTest)  Time elapsed: 13.922 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=124.0.6367.63)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd62a649d9780915fabdfe0b52db6854, clickElement {id=f.D2E6C5D87946BBBC9C9AAA340C71745C.d.069B898D5C879BE729CC907715F0FC56.e.165}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50368/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dd62a649d9780915fabdfe0b52db6854)] -> xpath: //*[@id="navbarSupportedContent"]/div/ul/li[5]/div/div/div[1]/div/div[2]/div[1]/dd/a[1]]
+Session ID: dd62a649d9780915fabdfe0b52db6854
+	at com.example.AppTest.TestCase2(AppTest.java:51)
+
