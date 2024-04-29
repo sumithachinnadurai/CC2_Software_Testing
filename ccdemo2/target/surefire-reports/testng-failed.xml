@@ -5,7 +5,11 @@
     <classes>
       <class name="com.example.AppTest">
         <methods>
-          <include name="TestCase2"/>
+          <include name="mybfre"/>
+          <include name="Test1"/>
+          <include name="Test3"/>
+          <include name="Test2"/>
+          <include name="myaftrmthd"/>
         </methods>
       </class> <!-- com.example.AppTest -->
     </classes>

@@ -1,17 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: com.example.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.312 s <<< FAILURE! - in com.example.AppTest
-TestCase2(com.example.AppTest)  Time elapsed: 13.922 s  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 56.435 s <<< FAILURE! - in com.example.AppTest
+Test1(com.example.AppTest)  Time elapsed: 1.029 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "sheet" is null
+	at com.example.AppTest.Test1(AppTest.java:60)
+
+Test2(com.example.AppTest)  Time elapsed: 7.735 s  <<< FAILURE!
 org.openqa.selenium.ElementNotInteractableException: 
 element not interactable
   (Session info: chrome=124.0.6367.63)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd62a649d9780915fabdfe0b52db6854, clickElement {id=f.D2E6C5D87946BBBC9C9AAA340C71745C.d.069B898D5C879BE729CC907715F0FC56.e.165}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50368/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dd62a649d9780915fabdfe0b52db6854)] -> xpath: //*[@id="navbarSupportedContent"]/div/ul/li[5]/div/div/div[1]/div/div[2]/div[1]/dd/a[1]]
-Session ID: dd62a649d9780915fabdfe0b52db6854
-	at com.example.AppTest.TestCase2(AppTest.java:51)
+Command: [1e6a47e733950c62a95d715c3c76a095, clickElement {id=f.5DBBAEA3223782EAB3ECCCA671810A38.d.121B111E97C17B134D0B1E7990DB2DDC.e.80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62278/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1e6a47e733950c62a95d715c3c76a095)] -> xpath: //*[@id='navbarSupportedContent']/div/ul/li[5]/div/div/div[1]/div/div[2]/div[1]/dd/a[1]]
+Session ID: 1e6a47e733950c62a95d715c3c76a095
+	at com.example.AppTest.Test2(AppTest.java:80)
+
+Test3(com.example.AppTest)  Time elapsed: 3.193 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="bnmembership"></span> is not clickable at point (545, 634). Other element would receive the click: <div id="onetrust-policy-text">...</div>
+  (Session info: chrome=124.0.6367.63)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b18fc4a7d6bb8b250fdd71c949d9fd40, clickElement {id=f.00D42A3BDAF0B1CDF74E963E7F0605CB.d.BBDF77F6F22787FE038A9BADF1E48F9B.e.50}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.63, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62367/devtoo..., se:cdpVersion: 124.0.6367.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b18fc4a7d6bb8b250fdd71c949d9fd40)] -> xpath: //*[@id='footer']/div/dd/div/div/div[1]/div/a[5]/span]
+Session ID: b18fc4a7d6bb8b250fdd71c949d9fd40
+	at com.example.AppTest.Test3(AppTest.java:106)
 
